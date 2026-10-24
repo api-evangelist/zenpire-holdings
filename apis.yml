@@ -1,25 +1,80 @@
 aid: zenpire-holdings
+
 name: Zenpire Holdings
+
+image: https://zenpire.tech/wp-content/uploads/2026/01/Group-6-2.png
+
 description: 'Zenpire Holdings is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
   backed by bowery-capital) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/zenpire-holdings/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
-- Company
-apis: []
+- Shopify Apps
+- E‑commerce
+- Dropshipping
+- Promotions
+- Events
+- Sizing
+- Product Variants
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- bowery-capital
+
 common:
+- type: LLMsTxt
+  url: llms/zenpire-holdings-llms.txt
+- type: WellKnown
+  url: well-known/zenpire-holdings-well-known.yml
+- type: Hosts
+  url: hosts/zenpire-holdings-hosts.yml
+- type: Vendors
+  url: vendors/zenpire-holdings-vendors.yml
+- type: TermsOfService
+  url: https://zenpire.tech/terms-of-use/
+- type: Support
+  url: https://zenpire.tech/support/
+- type: PrivacyPolicy
+  url: https://zenpire.tech/privacy-policy/
+- type: Blog
+  url: https://zenpire.tech/blog/
+- type: DomainSecurity
+  url: security/zenpire-holdings-domain-security.yml
 - type: Website
   url: http://zenpire.tech/
+
+apis: []
+
+x-backed-by:
+- bowery-capital
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The company website provides HTML pages but no discoverable OpenAPI, GraphQL, AsyncAPI, gRPC, or WSDL specifications.
+  evidence:
+    - url: https://zenpire.tech/
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
